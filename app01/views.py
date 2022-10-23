@@ -5,7 +5,7 @@ def index(request):
     return HttpResponse("welcome to django.")
 
 def user_list(request):
-    return HttpResponse("user_list")
+    return render(request, "user_list.html")
 
 def user_add(request):
     return HttpResponse("添加用户")
